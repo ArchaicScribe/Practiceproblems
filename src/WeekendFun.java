@@ -8,17 +8,26 @@ public class WeekendFun {
     return isWeekend;
   }
 
-  public int dateFashion(int you, int date) {
-    if(you =< 2){
-      return 0;
-    } else if ((you >= 8)){
-      return 2;
-    }else{
-      return 1;
+  public boolean firstLast6(int[] nums) {
+    if (nums[0] == 6){
+      return true;
+    } else if ((nums[nums.length -1] == 6)) {
+      return true;
+    } else {
+      return false;
     }
+  }
+
+  public boolean sameFirstLast(int[] nums) {
+    if((nums[nums.length] > 0) && (nums[0] == nums[nums.length - 1])){
+      return true;
+    } else if (nums[nums.length] < 1){
+      return false;
+    }
+    return false;
   }
 
 
 }
 
-}
+
