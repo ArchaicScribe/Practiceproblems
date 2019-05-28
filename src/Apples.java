@@ -1,3 +1,5 @@
+import java.util.BitSet;
+
 public class Apples {
 
   public static void main(String[] args) {
@@ -35,6 +37,42 @@ public class Apples {
       }
       System.out.println();
     }
+
+    String ta = "A ";
+    ta = ta.concat("B ");
+    String tb = "C ";
+    ta = ta.concat(tb);
+    ta.replace('C', 'D');
+    ta = ta.concat(tb);
+    System.out.println(ta);
+
+    BitSet obj = new BitSet(5);
+    for(int t = 0; t < 5; ++i)
+      obj.set(t);
+    System.out.println(3);
+
+        BitSet bs1 = new BitSet();
+        BitSet bs2 = new BitSet(6);
+
+
+        bs1.set(0);
+        bs1.set(1);
+        bs1.set(2);
+        bs1.set(4);
+
+
+        bs2.set(4);
+        bs2.set(6);
+        bs2.set(5);
+        bs2.set(1);
+        bs2.set(2);
+        bs2.set(3);
+
+        System.out.println("bs1 : " + bs1);
+        System.out.println("bs2 : " + bs2);
+
+
+
   }
 
   public static void display(int x[][]){
